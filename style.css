@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.container{
+    width: 100%;
+    max-width: 1270px;
+    margin: auto;
+}
+body{
+    font-family: 'Space Grotesk';
+    margin: 25px;
+    margin-left: 35px;
+     background: linear-gradient(0.25turn, #F5EFFF, #FFFDFF);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo{
+    height:70px;
+    padding-top: 4px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+   justify-content: space-around ;
+
+}
+.menu ul li{
+    margin-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: black;
+    padding: 15px;
+    font-family: 'poppins';
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:hover{
+    color: #741ff5;
+}
+.left::before{
+    content: "";
+    background-image: url('/assets/circle-01-1.png');
+    position: absolute;
+    left: 4%;
+    height: 100px;
+
+}
+.btn-wp{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+    height: 30px;
+    border-radius:25px;
+    padding: 10px 4px;
+    border: 2px solid rgba(55, 54, 54, 0.683);   
+}
+.btn-services{
+    border: none;   
+    padding: 15px;
+    color: white;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+.arrow{
+    margin-top: 5px;
+}
+.btn-content{
+    width: 250px;
+    margin-left: 2px;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    border: none;
+    color: white;
+
+}
+.btn-content:hover{
+    cursor: pointer;
+    background-color: #ff00ea;
+    background: linear-gradient(50deg, #ff00ea, #2600fc );
+}
+
+.btn-wp:hover{
+    color: white;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left h1{
+    font-family: 'Space Grotesk';
+    font-weight: 900;
+    font-size: 80px;
+    margin-bottom: 0%;
+    line-height: 80px;
+}
+.left p{
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 0%;
+    color: rgb(171, 169, 169);
+}
+.banner-img{
+    display: flex;
+}
+.content-img{
+    height: 380px;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+}
+.content-img:hover{
+    opacity: 0.85;
+}
+.rg-cnt-two{
+  margin-top: 60px;
+}
+.Theame-chnager{
+    border: 2px solid black;
+    width: 120px;
+    position: fixed;
+    border-radius: 10px;
+    padding: 5px;
+    right: 2%;
+    bottom: 2%;
+    cursor: pointer;
+    text-align: center;
+
+}
+.section-two{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+h1.stwo-text {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+.card{
+    display: flex;
+    box-shadow: 2px 2px 3px 3px  rgb(145, 144, 144);
+    border-radius: 15px;
+    width: 450px;
+    margin: 15px;
+    padding: 10px;
+}
+.card img{
+    height: 130px;
+    padding: 10px;
+}
+.card-sc-one{
+    display: flex;
+    justify-content: center;
+}
+
+.card-sc-two,.service-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services {
+    margin-left: 12px;
+    justify-content: center;
+    width: 345px;
+    margin: 10px;
+    border-radius: 12px ;
+    background-color: rgba(238, 235, 235, 0.963);
+}
+.services h1{
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+  
+}
+
+.ser-img{
+    padding: 15px;
+    height: 420px;
+    border-radius: 15px;
+}
+.ser-img:hover{
+    opacity: 0.84;
+}
+.service-hero-text{
+    text-align: center;
+    font-size: 65px;
+}
+@media only screen and (min-width: 240px) and (max-width: 375px){
+    .logo {
+        height: 43px;
+        
+    }
+    .menu,.btn-wp{
+        display: none;
+    }
+    .content{
+        display: block  ;
+    }
+    .left h1{
+        font-size: 3rem;
+    }
+    .content{
+        display: block;
+    }
+    .banner-img {
+        flex-wrap: wrap;
+        
+    }
+    .content-img{
+        margin-left: 0;
+    }
+
+}
